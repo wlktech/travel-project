@@ -1,0 +1,27 @@
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.sidebar{
+    background-color: black;
+    min-height: 1000px;
+
+}
+.sidebar-list li a{
+    color:white;
+    text-decoration: none;
+    
+}
+.sidebar-list li{
+    border-bottom: 1px solid white;
+    padding: 15px;
+    list-style: none;
+}
+.breadcrumb{
+    background-color: lightgray;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.user-head{
+    font-weight: bold;
+}
