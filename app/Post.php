@@ -60,6 +60,7 @@ class Post{
             $state = $this->conn->prepare("DELETE FROM posts WHERE id=:id");
             $state->bindParam(":id", $id);
             $state->execute();
+            return true;
         }catch(Exception $e){
 
         }

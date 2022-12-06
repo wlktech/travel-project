@@ -61,6 +61,11 @@ if(isset($_POST['title'])){
 if(isset($_GET['action'])){
     if($_GET['action'] == 'delete'){
         $id = $_GET['id'];
-        
+        $status = $postDB->delete($id);
+        if($status){
+            $_SESSION['status'] = 'Post Deleted Successfully';
+            $_SESSION['expire'] = time();
+            header('location: '.$_SERVER["HTTP_REFERER"]);
+        }
     }
 }
