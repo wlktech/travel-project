@@ -68,7 +68,7 @@ if(isset($_SESSION['auth'])){
                     <input type="hidden" name="action" value="add">
                     <div class="form-btn text-center mb-5">
                         <button type="submit" class="btn btn-outline-success"><i class="fa-solid fa-circle-plus"></i> Login</button>
-                        <button type="submit" class="btn btn-outline-danger"><i class="fa-solid fa-eraser"></i> Reset</button>
+                        <button type="reset" class="btn btn-outline-danger"><i class="fa-solid fa-eraser"></i> Reset</button>
                     </div>
                 </div>
             </form>
