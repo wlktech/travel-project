@@ -1,87 +1,19 @@
 <!-- Content Start -->
-<div class="container-fluid mt-3">
+<div class="container-fluid mt-3" id="content">
     <div class="row">
+        <?php foreach($posts as $post){ ?>
+
         <div class="col-xl-3 col-lg-4 col-md-6 col-12">
             <div class="card my-3">
-                <img src="./assets/images/slider3.jpg" class="card-img-top" style="height:250px" alt="">
+                <img src="./assets/posts/<?php echo $post['image']; ?>" class="card-img-top" style="height:250px" alt="">
                 <div class="m-4">
-                    <h4 class="text-center text-danger mb-3">Card Title</h4>
-                    <p class="mb-4" style="font-size:17px;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <button class="btn btn-outline-danger me-auto ms-auto d-block">View More</button>
+                    <h4 class="text-center text-danger mb-3"><?php echo $post['title'] ?></h4>
+                    <p class="mb-4" style="font-size:17px;"><?php echo substr($post["description"], 0,200) ?></p>
+                    <a style="margin:0 100px;" class="btn btn-outline-danger d-block" href="index.php?page=detail&id=<?php echo $post['id'] ?>">View More</a>
                 </div>
             </div>
         </div>
-        <div class="col-xl-3 col-lg-4 col-md-6 col-12">
-            <div class="card my-3">
-                <img src="./assets/images/card2.jpg" class="card-img-top" style="height:250px" alt="">
-                <div class="m-4">
-                    <h4 class="text-center text-danger mb-3">Card Title</h4>
-                    <p class="mb-4" style="font-size:17px;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <button class="btn btn-outline-danger me-auto ms-auto d-block">View More</button>
-                </div>
-            </div>
-        </div>
-        <div class="col-xl-3 col-lg-4 col-md-6 col-12">
-            <div class="card my-3">
-                <img src="./assets/images/slider3.jpg" class="card-img-top" style="height:250px" alt="">
-                <div class="m-4">
-                    <h4 class="text-center text-danger mb-3">Card Title</h4>
-                    <p class="mb-4" style="font-size:17px;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <button class="btn btn-outline-danger me-auto ms-auto d-block">View More</button>
-                </div>
-            </div>
-        </div>
-        <div class="col-xl-3 col-lg-4 col-md-6 col-12">
-            <div class="card my-3">
-                <img src="./assets/images/slider3.jpg" class="card-img-top" style="height:250px" alt="">
-                <div class="m-4">
-                    <h4 class="text-center text-danger mb-3">Card Title</h4>
-                    <p class="mb-4" style="font-size:17px;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <button class="btn btn-outline-danger me-auto ms-auto d-block">View More</button>
-                </div>
-            </div>
-        </div>
-        <div class="col-xl-3 col-lg-4 col-md-6 col-12">
-            <div class="card my-3">
-                <img src="./assets/images/slider3.jpg" class="card-img-top" style="height:250px" alt="">
-                <div class="m-4">
-                    <h4 class="text-center text-danger mb-3">Card Title</h4>
-                    <p class="mb-4" style="font-size:17px;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <button class="btn btn-outline-danger me-auto ms-auto d-block">View More</button>
-                </div>
-            </div>
-        </div>
-        <div class="col-xl-3 col-lg-4 col-md-6 col-12">
-            <div class="card my-3">
-                <img src="./assets/images/slider3.jpg" class="card-img-top" style="height:250px" alt="">
-                <div class="m-4">
-                    <h4 class="text-center text-danger mb-3">Card Title</h4>
-                    <p class="mb-4" style="font-size:17px;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <button class="btn btn-outline-danger me-auto ms-auto d-block">View More</button>
-                </div>
-            </div>
-        </div>
-        <div class="col-xl-3 col-lg-4 col-md-6 col-12">
-            <div class="card my-3">
-                <img src="./assets/images/slider3.jpg" class="card-img-top" style="height:250px" alt="">
-                <div class="m-4">
-                    <h4 class="text-center text-danger mb-3">Card Title</h4>
-                    <p class="mb-4" style="font-size:17px;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <button class="btn btn-outline-danger me-auto ms-auto d-block">View More</button>
-                </div>
-            </div>
-        </div>
-        <div class="col-xl-3 col-lg-4 col-md-6 col-12">
-            <div class="card my-3">
-                <img src="./assets/images/slider3.jpg" class="card-img-top" style="height:250px" alt="">
-                <div class="m-4">
-                    <h4 class="text-center text-danger mb-3">Card Title</h4>
-                    <p class="mb-4" style="font-size:17px;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <button class="btn btn-outline-danger me-auto ms-auto d-block">View More</button>
-                </div>
-            </div>
-        </div>
-        
+        <?php } ?>
     </div>
 </div>
 <!-- Content End -->

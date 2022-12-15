@@ -1,3 +1,4 @@
+<div class="col-md-9 mt-1">
 <nav aria-label="breadcrumb" class="bread">
     <ol class="breadcrumb">
         <li class="breadcrumb-item"><a style="text-decoration:none;" href="#">Posts</a></li>

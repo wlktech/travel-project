@@ -1,3 +1,4 @@
+<div class="col-md-9 mt-1">
 <div class="col-md-6 offset-md-3">
     <h2 class="mt-5 user-head"><i class="fa-solid fa-list"></i> Post List</h2>
 

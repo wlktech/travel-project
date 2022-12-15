@@ -9,7 +9,12 @@ $connection = $db->connect();
 $user = new User($connection);
 $postDB = new Post($connection);
 
+if(!isset($_SESSION['auth'])){
+    header("location: login.php");
+}
+
 include "./header.php";
+include "./sidebar.php";
 if(isset($_GET['page'])){
     $page = $_GET['page'];
     if($page=="adduser"){

@@ -34,6 +34,7 @@ if(isset($_POST['username'])){
         
 
         if($_POST['action']=="add"){
+            $password = password_hash($password, PASSWORD_BCRYPT);
             $status = $user->create($name, $email, $password);
             if($status){
                 $_SESSION['status'] = "User Created Successfully";

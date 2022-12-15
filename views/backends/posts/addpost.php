@@ -1,3 +1,4 @@
+<div class="col-md-9 mt-1">
 <nav aria-label="breadcrumb" class="bread">
     <ol class="breadcrumb">
         <li class="breadcrumb-item"><a style="text-decoration:none;" href="#">Posts</a></li>
@@ -67,7 +68,7 @@
                     <label for="image" class="form-label">Image : </label>
                 </div>
                 <div class="col-md-8">
-                    <input type="file" class="form-control" name="image">
+                    <input type="file" class="form-control" name="image" accept="image/*">
                     <?php
                     if(isset($_SESSION['image'])){ ?>
                     <p class="text-danger">
